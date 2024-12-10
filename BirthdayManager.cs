@@ -13,6 +13,20 @@ namespace birthdayCelebrator
             people.Add(new Person(name, birthday));
         }
 
+        public void RemovePerson(string name)
+        {
+            var personToRemove = people.FirstOrDefault(p => p.Name == name);
+            if (personToRemove != null)
+            {
+                people.Remove(personToRemove);
+            }
+        }
+
+        public Person GetPerson(string name)
+        {
+            return people.FirstOrDefault(p => p.Name == name);
+        }
+
         public void CheckBirthdaysToday()
         {
             Console.WriteLine("\n🎉 Checking for birthdays today...");

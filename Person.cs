@@ -17,5 +17,10 @@ namespace birthdayCelebrator
         {
             return Birthday.Day == DateTime.Today.Day && Birthday.Month == DateTime.Today.Month;
         }
+
+        public void UpdateBirthday(DateTime newBirthday)
+        {
+            Birthday = newBirthday;
+        }
     }
 }
