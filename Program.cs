@@ -1,6 +1,6 @@
 using System;
 
-namespace BirthdayCelebrator
+namespace birthdayCelebrator
 {
     class Program
     {
